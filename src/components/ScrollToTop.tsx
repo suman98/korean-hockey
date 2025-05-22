@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Fab, Zoom, useTheme } from '@mui/material';
+import { Fab, Zoom } from '@mui/material';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import { styled } from '@mui/material/styles';
 
@@ -19,7 +19,6 @@ const StyledFab = styled(Fab)(({ theme }) => ({
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const theme = useTheme();
 
   // Show button when page is scrolled down
   const toggleVisibility = () => {

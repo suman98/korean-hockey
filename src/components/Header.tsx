@@ -11,7 +11,6 @@ import {
   Button,
   Tooltip,
   MenuItem,
-  useTheme,
   Badge,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -36,7 +35,6 @@ const userMenuItems = [
 const Header = () => {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = useState<null | HTMLElement>(null);
-  const theme = useTheme();
   const navigate = useNavigate();
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
